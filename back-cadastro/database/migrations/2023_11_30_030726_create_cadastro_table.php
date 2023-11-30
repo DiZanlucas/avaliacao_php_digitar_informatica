@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('cadastro', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('nome');
+            $table->date('dataNascimento');
+            $table->string('email');
+            $table->string('foto');
         });
     }
 
